@@ -66,6 +66,7 @@ h1 {
 .drinks > a {
     height: auto;
     width: auto;
+    
 }
 .single-drink {
   max-width: 550px;
@@ -81,6 +82,7 @@ h1 {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  cursor: pointer;
 }
 /*! image div container */
 .img-0 {
