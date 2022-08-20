@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+}
+.gen-cocktails {
+  background-color: rgba(174, 174, 209, 0.286);
+  width: 100%;
+  height: 100%;
+}
+/* global */
+h1 {
+  /* font-size: 22px; */
+}
+
+.title-container {
+  height: 30vh;
+  width: 100vw;
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  height: auto;
+  min-width: 450px;
+  border: 1px solid goldenrod;
+}
+.title > h2 {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  letter-spacing: 4px;
+  font-size: 29px;
+}
+
+.title input {
+  text-transform: capitalize;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.main {
+  height: auto;
+  width: 100vw;
+  border: 1px solid red;
+}
+.drinks {
+  width: 100%;
+  display: flex;
+  /* padding: 15px; */
+  justify-content: space-evenly;
+  border: 1px pink solid;
+  flex-wrap: wrap;
+}
+.drinks > a {
+    height: auto;
+    width: auto;
+}
+.single-drink {
+  max-width: 550px;
+  min-width: 350px;
+  height: auto;
+  /* min-width: 350px; */
+  margin: 15px;
+  border: 1px solid orange;
+  position: relative;
+}
+.single-drink img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/*! image div container */
+.img-0 {
+  width: 100%;
+  height: 300px;
+  border: 1px solid red;
+}
+.sing-drink-title {
+  position: absolute;
+  right: -13px;
+  bottom: -10px;
+  background-color: black;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  line-height: 30px;
+}
+/* loading */
+.loading {
+    height: 70vh;
+    width: 100%;
+    background-color: transparent;
+}
+/* hides loading  */
+.hides-loading{
+    display: none;
+}
+.hides-drinks{
+    display: none;
+}
+.hides-error-msg {
+    display: none;
+}

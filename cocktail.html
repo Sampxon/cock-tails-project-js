@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./cock-tail.css" />
+    
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ?general body -->
+    <section class="gen-cocktails">
+      <!-- !title -->
+      <div class="title-container">
+        <div class="title">
+          <h2>Our Cocktail Drinks</h2>
+          <input
+            type="text"
+            placeholder="search your favorite cocktail"
+            name="drink"
+          />
+        </div>
+      </div>
+      <!-- !end of title -->
+
+      <!--!MAIN menu items -->
+      <section class="main">
+        <!-- loading stage -->
+
+        <div class="loading ">
+          <img src="./images/loader2.gif" alt="loading" />
+        </div>
+
+        <!-- !working stage cocktails -->
+        <section class="drinks">
+          <!-- start of single drink-->
+          <a href="./single-drink.html">
+            <div class="single-drink">
+            <div class="img-0">
+              <img src="./images/blue-drink.jpg" alt="" />
+            </div>
+            <h4 class="sing-drink-title">Mojito Drink</h4>
+          </div>
+          </a>
+          <!-- end of single drink -->
+
+
+        </section>
+
+        <!-- error stage -->
+        <h1 class="hides-error-msg">There was an Error....</h1>
+      </section>
+    </section>
+    <!--! END OF MAIN menu items -->
+    <script src="./cocktail.js" type="module"></script>
+  </body>
+</html>
