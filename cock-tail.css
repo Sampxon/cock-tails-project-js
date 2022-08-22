@@ -6,11 +6,14 @@
   margin: 0px;
 }
 body {
+  background-color: rgba(178, 188, 200, 0.558);
 }
 .gen-cocktails {
-  background-color: rgba(174, 174, 209, 0.286);
-  width: 100%;
-  height: 100%;
+  border: 1px red solid;
+  background-color: rgba(178, 188, 200, 0.558);
+  width: 100vw;
+  height: auto;
+  position: relative;
 }
 /* global */
 h1 {
@@ -28,9 +31,12 @@ h1 {
 
 .title {
   height: auto;
-  min-width: 450px;
-  /* border: 1px solid goldenrod; */
+  min-width: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .title > h2 {
   text-align: center;
   text-transform: capitalize;
@@ -47,11 +53,17 @@ h1 {
   padding: 8px;
   border: 1px solid white;
   border-radius: 10px;
-  background-color: white;
+  outline: none;
 }
 
+.title input:hover {
+  border: 1px solid rgba(178, 188, 200, 0.558);
+}
+/* !main  */
+
 .main {
-  height: auto;
+  /* height: auto; */
+  height: 100%;
   width: 100vw;
   /* border: 1px solid red; */
 }
@@ -67,6 +79,7 @@ h1 {
   height: auto;
   width: auto;
 }
+/* !single */
 .single-drink {
   max-width: 550px;
   min-width: 350px;
@@ -79,13 +92,13 @@ h1 {
 .single-drink img {
   width: 100%;
   height: 100%;
-  margin: 10px;
   object-fit: cover;
   object-position: center;
   cursor: pointer;
 }
 /*! image div container */
 .img-0 {
+  padding: 7px;
   background-color: white;
   width: 100%;
   height: 300px;
@@ -101,19 +114,102 @@ h1 {
   color: white;
   line-height: 30px;
 }
-/* loading */
+/* !loading */
 .loading {
-  height: 70vh;
+  /* height: 80vh; */
+  height: 80vh;
   width: 100%;
   background-color: transparent;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
-/* hides loading  */
+.div {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+/* !hides loading  */
 .hides-loading {
   display: none;
+  right: -100%;
 }
+
 .hides-drinks {
   display: none;
 }
+/* !error message */
+.error {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.error h1 {
+  height: 100%;
+  width: 100%;
+  letter-spacing: 2px;
+  font-size: 35px;
+  font-weight: 500;
+}
 .hides-error-msg {
   display: none;
+}
+
+.loading div {
+  width: 2rem;
+  height: 2rem;
+  margin: 6rem 1rem;
+  background: #515b92;
+  border-radius: 50%;
+  animation: 0.9s bounce infinite alternate;
+}
+
+.loading div:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.loading div:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.loading div:nth-child(5) {
+  animation-delay: 0.9s;
+}
+
+/* .loading div:nth-child(6) {
+  animation-delay: 1.3s;
+} */
+
+@keyframes bounce {
+  to {
+    opacity: 0.5;
+    transform: translate3d(0, -1.6rem, 0);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .title {
+  }
+  .title input {
+    width: 75%;
+    margin-bottom: 10px;
+  }
+  .main {
+    margin-top: -40px;
+  }
+  .drinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .single-drink {
+    margin-bottom: 100px;
+    max-width: 270px;
+    min-width: 200px;
+    max-height: 180px;
+    min-height: 150px;
+  }
 }

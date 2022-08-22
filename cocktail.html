@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./cock-tail.css" />
-    
 
     <title>Document</title>
   </head>
@@ -17,6 +16,7 @@
         <div class="title">
           <h2>Our Cocktail Drinks</h2>
           <input
+            class="search-input"
             type="text"
             placeholder="search your favorite cocktail"
             name="drink"
@@ -28,14 +28,16 @@
       <!--!MAIN menu items -->
       <section class="main">
         <!-- loading stage -->
-
         <div class="loading hides-loading">
-          <img src="./images/loader2.gif" alt="loading" />
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
 
         <!-- !working stage cocktails -->
-        <section class="drinks">
-          <!-- start of single drink-->
+        <!-- <section class="drinks">
           <a href="./single-drink.html">
             <div class="single-drink">
             <div class="img-0">
@@ -44,16 +46,16 @@
             <h4 class="sing-drink-title">Mojito Drink</h4>
           </div>
           </a>
-          <!-- end of single drink -->
-
-
-        </section>
-
-        <!-- error stage -->
-        <h1 class="hides-error-msg">There was an Error....</h1>
+        </section> -->
       </section>
+      <!-- !end of main -->
+      <div class="error hides-error-msg">
+        <h1>Sorry, no drinks were found....</h1>
+      </div>
+
+      <!-- ^error stage -->
     </section>
-    <!--! END OF MAIN menu items -->
+    <!--! END OF gen items -->
     <script src="./cocktail.js" type="module"></script>
   </body>
 </html>
