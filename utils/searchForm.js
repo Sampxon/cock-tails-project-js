@@ -59,3 +59,15 @@ console.log(mainEl);
 // });
 
 // https://www.thecocktaildb.com/api/json/v1/1/search.php?s=
+
+// mainEl.classList.add('hides-loading');
+// errorEl.classList.remove('hides-error-msg');
+
+// let currentDrinks = []
+// currentDrinks = displayDrinks(`${baseUrl}${value}`);
+// if (value && value.trim().length > 0) {
+
+// } else {
+//   mainEl.classList.add('hides-loading');
+//   errorEl.classList.remove('hides-error-msg');
+// }
