@@ -16,7 +16,7 @@ const fetchCockTails = async (url) => {
   try {
     const response = await fetch(url);
     const data = await response.json();
-    // console.log(data);
+    console.log(data);
     const drinks = data.drinks;
     // console.log(drinks);
 
@@ -47,8 +47,7 @@ const displayDrinks = async (url) => {
       // console.log(drinkItem);
       // !destructure
       const { idDrink: id, strDrinkThumb: image, strDrink: name } = drinkItem;
-      // if (!drinkItem) {
-      // }
+
       return `
         <!-- start of single drink-->
         <a href="./single-drink.html">
@@ -79,10 +78,11 @@ const inputAttribute = getElement('[name="drink"]');
 const baseUrl = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=';
 
 searchEl.addEventListener('keyup', (e) => {
-  // e.preventDefault();
+  e.preventDefault();
   let value = inputAttribute.value.toLowerCase().trim();
   if (!value) return;
 
   displayDrinks(`${baseUrl}${value}`);
   console.log(value);
 });
+console.log('debugging.....');
